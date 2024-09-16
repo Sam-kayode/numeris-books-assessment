@@ -1,0 +1,10 @@
+@import "../../../assets/styles/variable.scss";
+
+header {
+  h2 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 39.78px;
+    color: var(--text-black);
+  }
+}
