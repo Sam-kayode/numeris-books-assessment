@@ -16,3 +16,11 @@ export interface SummaryData {
     amount: string;
     status: string;
   }
+
+  export interface ActivityData {
+    picture: string;
+    title: string;
+    timeStamp: string;
+    action: string;
+    description: string;
+  }

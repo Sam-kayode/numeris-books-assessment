@@ -1,15 +1,17 @@
 import { Button } from "@/modules/shared";
 import NumerisCard from "@/modules/shared/components/cards/NumerisCard";
 import "./sections.scss";
+import ActivityList from "../lists/RecentActivityList";
+import { recentActivities } from "../../constants";
 
 const RecentActivities = () => {
   return (
-    <NumerisCard className="recent-card" variant="lg">
+    <NumerisCard className="recent-card recent-activities" variant="lg">
       <header className="mb-8">
         <h3>Recent Activities</h3>
-        <Button variant="outlined">VIEW ALL INVOICES</Button>
+        <Button variant="outlined">VIEW ALL</Button>
       </header>
-      
+      <ActivityList activities={recentActivities} />
     </NumerisCard>
   );
 };

@@ -1,4 +1,9 @@
-import type { InvoiceActionData, SummaryData, Invoice } from "./index";
+import type {
+  InvoiceActionData,
+  SummaryData,
+  Invoice,
+  ActivityData,
+} from "./index";
 
 export const invoiceSummaryData: SummaryData[] = [
   {
@@ -41,41 +46,71 @@ export const invoiceActionData: InvoiceActionData[] = [
   },
 ];
 
-
 // Sample data (replace this with actual prop data)
 export const invoiceData: { [key: string]: Invoice[] } = {
-  '27th November, 2022': [
+  "27th November, 2022": [
     {
-      invoiceNumber: '1023494 - 2304',
-      dueDate: 'May 19th, 2023',
-      amount: '$1,311,750.12',
-      status: 'Paid'
+      invoiceNumber: "1023494 - 2304",
+      dueDate: "May 19th, 2023",
+      amount: "$1,311,750.12",
+      status: "Paid",
     },
     {
-      invoiceNumber: '1023494 - 2304',
-      dueDate: 'May 19th, 2023',
-      amount: '$1,311,750.12',
-      status: 'Overdue'
-    }
+      invoiceNumber: "1023494 - 2304",
+      dueDate: "May 19th, 2023",
+      amount: "$1,311,750.12",
+      status: "Overdue",
+    },
   ],
-  '8th December, 2022': [
+  "8th December, 2022": [
     {
-      invoiceNumber: '1023494 - 2304',
-      dueDate: 'May 19th, 2023',
-      amount: '$1,311,750.12',
-      status: 'Draft'
+      invoiceNumber: "1023494 - 2304",
+      dueDate: "May 19th, 2023",
+      amount: "$1,311,750.12",
+      status: "Draft",
     },
     {
-      invoiceNumber: '1023494 - 2304',
-      dueDate: 'May 19th, 2023',
-      amount: '$1,311,750.12',
-      status: 'Pending Payment'
+      invoiceNumber: "1023494 - 2304",
+      dueDate: "May 19th, 2023",
+      amount: "$1,311,750.12",
+      status: "Pending Payment",
     },
     {
-      invoiceNumber: '1023494 - 2304',
-      dueDate: 'May 19th, 2023',
-      amount: '$1,311,750.12',
-      status: 'Paid'
-    }
-  ]
+      invoiceNumber: "1023494 - 2304",
+      dueDate: "May 19th, 2023",
+      amount: "$1,311,750.12",
+      status: "Paid",
+    },
+  ],
 };
+
+export const recentActivities: ActivityData[] = [
+  {
+    picture: "/assets/images/avatar.svg",
+    title: "Invoice creation",
+    timeStamp: "Yesterday, 12:05 PM",
+    action: "Created invoice",
+    description: "00239434/Olaniyi Ojo Adewale",
+  },
+  {
+    picture: "/assets/images/avatar.svg",
+    title: "Invoice creation",
+    timeStamp: "Yesterday, 12:05 PM",
+    action: "Created invoice",
+    description: "00239434/Olaniyi Ojo Adewale",
+  },
+  {
+    picture: "/assets/images/avatar.svg",
+    title: "Invoice creation",
+    timeStamp: "Yesterday, 12:05 PM",
+    action: "Created invoice",
+    description: "00239434/Olaniyi Ojo Adewale",
+  },
+  {
+    picture: "/assets/images/avatar.svg",
+    title: "Invoice creation",
+    timeStamp: "Yesterday, 12:05 PM",
+    action: "Created invoice",
+    description: "00239434/Olaniyi Ojo Adewale",
+  },
+];

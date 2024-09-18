@@ -1,33 +1,37 @@
 @import "../../../assets/styles/variable.scss";
 
-header {
-  h2 {
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 39.78px;
-    color: var(--text-black);
+.invoice-view {
+  padding-bottom: 50px;
+  .view-header {
+    h2 {
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 39.78px;
+      color: var(--text-black);
+    }
+
+    .header-button {
+      font-size: 14px;
+      font-weight: 600;
+    }
   }
 
-  .header-button {
-    font-size: 14px;
-    font-weight: 600;
+  .recent-section {
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    gap: 32px;
+
+    @media only screen and (max-width: 1024px) {
+      display: block;
+    }
   }
-}
 
-.recent-section{
-display:grid;
-grid-template-columns: 60% 40%;
-}
-
-@media only screen and (max-width: 1024px) {
- 
-}
-
-@media only screen and (max-width: 768px) {
-  header{
-    display:block !important;
+  @media only screen and (max-width: 768px) {
+    .view-header {
+      display: block !important;
+    }
   }
-}
 
-@media only screen and (max-width: 576px) {
+  @media only screen and (max-width: 576px) {
+  }
 }

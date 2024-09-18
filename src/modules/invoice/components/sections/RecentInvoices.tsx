@@ -1,16 +1,17 @@
 import { Button } from "@/modules/shared";
 import NumerisCard from "@/modules/shared/components/cards/NumerisCard";
 import "./sections.scss";
-import { InvoiceListItems } from "../lists/RecentInvoiceItems";
+import { invoiceData } from "../../index";
+import { RecentInvoiceList } from "../lists/RecentInvoiceItems";
 
 const RecentInvoices = () => {
   return (
-    <NumerisCard className="recent-card" variant="lg">
+    <NumerisCard className="recent-card recent-invoices" variant="lg">
       <header className="mb-8">
         <h3>Recent Invoice</h3>
         <Button variant="outlined">VIEW ALL INVOICES</Button>
       </header>
-      <InvoiceListItems />
+      <RecentInvoiceList invoices={invoiceData} />
     </NumerisCard>
   );
 };

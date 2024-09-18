@@ -1,5 +1,5 @@
 import "./list.scss";
-import { invoiceData, Invoice, getStatusColor } from "../../index";
+import { Invoice, getStatusColor } from "../../index";
 
 interface InvoiceListProps {
   invoices: {
@@ -8,7 +8,7 @@ interface InvoiceListProps {
 }
 
 // The main component that takes the invoices data as a prop
-const InvoiceList: React.FC<InvoiceListProps> = ({ invoices }) => {
+export const RecentInvoiceList: React.FC<InvoiceListProps> = ({ invoices }) => {
   return (
     <div className="invoice-list-container">
       {Object.keys(invoices).map((date) => (
@@ -23,7 +23,7 @@ const InvoiceList: React.FC<InvoiceListProps> = ({ invoices }) => {
                 </p>
               </div>
 
-              <div>
+              <div className="invoice-timestamp">
                 <p className="due-date">DUE DATE</p>
                 <p className="invoice-due">{invoice.dueDate}</p>
               </div>
@@ -41,10 +41,3 @@ const InvoiceList: React.FC<InvoiceListProps> = ({ invoices }) => {
     </div>
   );
 };
-
-// Main app rendering the component
-export const InvoiceListItems: React.FC = () => (
-  <>
-    <InvoiceList invoices={invoiceData} />
-  </>
-);
