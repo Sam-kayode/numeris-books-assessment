@@ -1,0 +1,17 @@
+.integer {
+    color: var(--text-black);
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .decimal {
+    color: var(--text-grey);
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  @media (max-width:576px){
+    .integer {
+        font-size: 24px;
+      }
+  }

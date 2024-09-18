@@ -46,10 +46,21 @@
 }
 
 .default {
-
-    
 }
 
-// "button" | "submit" | "reset";
-//   variant?: "primary" | "secondary" | "outlined" | "plain";
-//   density?: "compact" | "default";
+@media only screen and (max-width: 1024px) {
+  //   .btn {
+  //     height: fit-content;
+  //     padding: 8px 20px;
+  //   }
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 576px) {
+  .btn {
+    height: fit-content;
+    padding: 20px 35px;
+  }
+}

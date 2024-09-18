@@ -10,7 +10,7 @@ interface ButtonProps {
   className?: string;
 }
 
-const Button: FC<ButtonProps> = ({
+export const Button: FC<ButtonProps> = ({
   type = "button",
   variant = "plain", // Set default variant
   className = "", // Optional className
@@ -28,5 +28,3 @@ const Button: FC<ButtonProps> = ({
     </button>
   );
 };
-
-export default Button;

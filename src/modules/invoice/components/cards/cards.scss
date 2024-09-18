@@ -1,0 +1,133 @@
+.invoice-cards-container {
+  display: grid;
+  gap: 32px; // Spacing between the cards
+  grid-template-columns: repeat(4, 1fr);
+  // grid-template-columns: repeat(minmax(200px, 250px));
+  overflow-x: auto;
+
+}
+  
+.invoice-card {
+    .icon {
+      margin-right: 10px;
+      width: 40px; // Adjust the size based on the design
+      height: 40px;
+    }
+
+    .card-title {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.08em;
+      color: var(--text-grey); // Adjust color
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+
+      .badge {
+        font-size: 12px;
+        font-weight: 700;
+        border-radius: 24px;
+        padding: 8px 14px;
+        color: #fff;
+        color:var(--dark-grey);
+
+        // Define badge colors
+        &.green {
+          background-color: #a8f0c0;
+        }
+
+        &.red {
+          background-color: #f2a2a2;
+        }
+
+        &.yellow {
+          background-color: #f2d58a;
+        }
+
+        &.gray {
+          background-color: #cccccc;
+        }
+      }
+    }
+
+    .amount {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333333;
+    }
+
+    .card-description {
+      color: var(--text-grey);
+      font-size: 14px !important;
+      font-weight: 400;
+    }
+} 
+
+@media (max-width: 768px) {
+  .invoice-card {
+    padding: 20px;
+    min-width: 200px;
+  }
+}
+  
+  .is-action {
+    .icon {
+      width: 80px; // Adjust the size based on the design
+      height: 80px;
+    }
+
+    .card-title {
+      font-size: 22px;
+      text-transform: none;
+      font-weight: 500;
+      color: var(--text-grey) !important;
+      letter-spacing: -0.5px;
+    }
+  }
+
+  .index-action {
+    background-color: var(--primary-color);
+
+    .card-title,
+    .card-description {
+      color: var(--white-color) !important;
+    }
+  }
+
+
+.invoice-action-container {
+  display: grid;
+  gap: 32px; // Spacing between the cards
+  grid-template-columns: repeat(3, 1fr);
+
+
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 768px) {
+
+    gap: 20px;
+
+    .invoice-card {
+      padding: 20px 15px;
+    }
+
+    .is-action {
+      .icon {
+        width: 50px; // Adjust the size based on the design
+        height: 40px;
+      }
+
+      .card-title {
+        font-size: 18px;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

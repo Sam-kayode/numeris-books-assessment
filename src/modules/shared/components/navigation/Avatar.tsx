@@ -1,9 +1,9 @@
-import Button from "../forms/Button";
+import { Button } from "../../index";
 
 const Avatar = () => {
   return (
-    <Button className="avatar centralise">
-      <div className="initials centralise">KO</div>
+    <Button className="avatar centralize">
+      <div className="initials centralize">KO</div>
       <img src="/assets/icons/chevron-down.svg" alt="" />
     </Button>
   );

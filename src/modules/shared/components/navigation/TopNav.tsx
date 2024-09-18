@@ -7,7 +7,7 @@ const TopNav = () => {
     <div className="top-nav">
       <h2 className="route-title">INVOICE</h2>
 
-      <div className="centralise mt-3">
+      <div className="centralize mt-3">
         <Notifications/>
        <Avatar/>
       </div>

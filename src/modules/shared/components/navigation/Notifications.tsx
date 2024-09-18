@@ -1,4 +1,5 @@
-import Button from "../forms/Button";
+import { Button } from "../../index";
+import "./navigation.scss";
 
 const Notifications = () => {
   return (
