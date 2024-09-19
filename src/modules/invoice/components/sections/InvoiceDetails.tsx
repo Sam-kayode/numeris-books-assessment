@@ -4,6 +4,7 @@ import { getStatusColor } from "../../utils/stringUtils";
 import NumerisDropdown from "@/modules/shared/components/forms/NumerisDropdown";
 import CheckButtonGroup from "./CheckButtonGroup";
 import InvoiceBreakDown from "./InvoiceBreakDown";
+import InvoiceActivities from "./InvoiceActivities";
 
 const InvoiceDetails = () => {
   const dropdownItems = [
@@ -49,6 +50,7 @@ const InvoiceDetails = () => {
       <CheckButtonGroup />
       <div className="breakdown-container mt-9">
         <InvoiceBreakDown />
+        <InvoiceActivities />
       </div>
     </section>
   );

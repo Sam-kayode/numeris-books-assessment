@@ -2,13 +2,14 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { NavItemsProps, NavItemProps } from "../../types";
 
-
 const NavItem: React.FC<NavItemProps> = ({ route }) => {
   return (
     <NavLink
-      to={route.path}
+      to={route!.path!}
       className={({ isActive }) =>
-        `nav-item centralize-y ${isActive ? "active" : ""}`
+        `nav-item centralize-y ${
+          isActive && route.name == "Invoice" ? "active" : ""
+        }`
       }
       aria-label={`Navigate to ${route.name}`}
     >

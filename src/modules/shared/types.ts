@@ -1,7 +1,7 @@
 // type for route links
 export interface Route {
   name: string;
-  path: string;
+  path: string | null;
   icon: string;
 }
 

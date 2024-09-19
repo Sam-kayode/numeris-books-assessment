@@ -1,5 +1,5 @@
-import React from 'react';
-import './cards.scss'; 
+import React from "react";
+import "./cards.scss";
 
 // Define the type for each payment information item
 interface PaymentItem {
@@ -12,10 +12,13 @@ interface PaymentInformationProps {
   paymentData: PaymentItem[];
 }
 
-const PaymentInformation: React.FC<PaymentInformationProps> = ({ paymentData }) => {
+const PaymentInformation: React.FC<PaymentInformationProps> = ({
+  paymentData,
+}) => {
   return (
     <div className="payment-information mt-6">
       <h4 className="section-title">PAYMENT INFORMATION</h4>
+
       <div className="payment-grid mt-3">
         {paymentData.map((item, index) => (
           <div className="payment-item" key={index}>

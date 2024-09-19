@@ -153,3 +153,42 @@ export const paymentData = [
   { label: 'BANK ADDRESS', value: '1023902390' },
   { label: 'ACCOUNT NUMBER', value: 'March 30th, 2023' },
 ];
+
+
+
+export const invoiceActivities: ActivityData[] = [
+  {
+    picture: "/assets/images/avatar.svg",
+    title: "Invoice creation",
+    timeStamp: "Today, 12:20 PM",
+    action: "Created invoice",
+    description: "00239434/Olaniyi Ojo Adewale",
+  },
+  {
+    picture: "/assets/images/avatar.svg",
+    title: "Invoice creation",
+    timeStamp: "Today, 12:20 PM",
+    action: "Sent invoice",
+    description: "00239434/Olaniyi Ojo Adewale",
+  },
+  {
+    picture: "/assets/images/avatar.svg",
+    title: "Invoice creation",
+    timeStamp: "Today, 12:20 PM",
+    action: "You manually confirmed a partial payment of",
+    description: "$503,000.00",
+  },{
+    picture: "/assets/images/avatar.svg",
+    title: "Invoice creation",
+    timeStamp: "Today, 12:20 PM",
+    action: "You manually confirmed a full payment of",
+    description: "$6,000,000.00",
+  },
+  {
+    picture: "/assets/images/avatar.svg",
+    title: "Invoice creation",
+    timeStamp: "Today, 12:20 PM",
+    action: "Sent invoices",
+    description: "00239434/Olaniyi Ojo Adewale to Olaniyi Ojo Adewale",
+  },
+];

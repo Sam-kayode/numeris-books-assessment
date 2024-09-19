@@ -4,17 +4,17 @@ import { Route } from "./types";
 export const routes: Route[] = [
   {
     name: "Getting Started",
-    path: "/getting-started",
+    path: "/invoice",
     icon: "/assets/icons/home.svg",
   },
   {
     name: "Overview",
-    path: "/overview",
+    path: "/invoice",
     icon: "/public/assets/icons/two-tone.svg",
   },
   {
     name: "Accounts",
-    path: "/accounts",
+    path: "/invoice",
     icon: "/assets/icons/home.svg",
   },
   {
@@ -24,17 +24,17 @@ export const routes: Route[] = [
   },
   {
     name: "Beneficiary Management",
-    path: "/beneficiary-management",
+    path: "/invoice",
     icon: "/public/assets/icons/personnel.svg",
   },
   {
     name: "Help Center",
-    path: "/help-center",
+    path: "/invoice",
     icon: "/public/assets/icons/help.svg",
   },
   {
     name: "Settings",
-    path: "/settings",
+    path: "/invoice",
     icon: "/public/assets/icons/settings.svg",
   },
 ];

@@ -49,12 +49,12 @@
   }
 }
 
-
 nav {
   .nav-item {
     color: var(--text-grey);
     height: 68px;
     width: 100%;
+    max-width: 235px;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.0057em;
@@ -73,15 +73,66 @@ nav {
   }
 }
 
-
-@media only screen and (max-width: 1024px) {
-  .nav-text {
-    // display: none;
+.hamburger-container {
+  label {
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    transform: scale(0.5);
+    position:relative;
+    z-index:9999999999;
+    right:20px;
+    top:5px;
   }
-}
 
-@media only screen and (max-width: 768px) {
-}
+  label span {
+    background: #000000;
+    border-radius: 10px;
+    height: 7px;
+    margin: 7px 0;
+    transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }
 
-@media only screen and (max-width: 576px) {
+  span:nth-of-type(1) {
+    width: 50%;
+  }
+
+  span:nth-of-type(2) {
+    width: 100%;
+  }
+
+  span:nth-of-type(3) {
+    width: 75%;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked ~ span:nth-of-type(1) {
+    transform-origin: bottom;
+    transform: rotatez(45deg) translate(8px, 0px);
+  }
+
+  input[type="checkbox"]:checked ~ span:nth-of-type(2) {
+    transform-origin: top;
+    transform: rotatez(-45deg);
+  }
+
+  input[type="checkbox"]:checked ~ span:nth-of-type(3) {
+    transform-origin: bottom;
+    width: 50%;
+    transform: translate(30px, -11px) rotatez(45deg);
+  }
+
+  .overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+  }
 }

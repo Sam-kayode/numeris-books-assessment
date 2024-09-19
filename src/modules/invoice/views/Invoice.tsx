@@ -24,7 +24,7 @@ const Invoice = () => {
       <InvoiceActionsSection />
       <section className="recent-section mt-7">
         <RecentInvoices />
-        <RecentActivities/>
+        <RecentActivities />
       </section>
     </div>
   );

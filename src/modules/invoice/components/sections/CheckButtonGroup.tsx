@@ -12,8 +12,8 @@ const CheckButtonGroup = () => {
   return (
     <div className="check-btn-group">
       <p className="mr-5">REMINDERS</p>
-      {items.map((item: string) => (
-        <CheckButton text={item} />
+      {items.map((item: string, index) => (
+        <CheckButton text={item} key={index} />
       ))}
     </div>
   );

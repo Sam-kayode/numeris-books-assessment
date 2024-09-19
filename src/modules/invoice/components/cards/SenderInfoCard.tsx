@@ -17,14 +17,17 @@ const SenderInfoCard = () => {
           </div>
         </div>
       </div>
+
       <div className="customer">
         <h3>CUSTOMER</h3>
         <h4>Olaniyi Ojo Adewale</h4>
         <p>+386 989 271 3115</p>
         <p>info@fabulousenterise.co</p>
       </div>
+
       <div className="w-full mt-5">
         <h3>INVOICE DETAILS</h3>
+
         <div className="invoice-details">
           <div>
             <h5>INVOICE NO</h5>
