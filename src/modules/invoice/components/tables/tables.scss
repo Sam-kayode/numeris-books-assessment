@@ -1,0 +1,105 @@
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  table-layout: fixed; // Ensures uniform column width
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19.57px;
+  color: var(--text-black);
+
+  td {
+    padding: 16px 0;
+    border: none; // Remove borders
+    vertical-align: top;
+    word-wrap: break-word;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19.57px;
+
+    // Text alignment adjustments for specific columns
+    &:nth-child(2),
+    &:nth-child(3) {
+      text-align: center;
+    }
+    &:nth-child(4) {
+      text-align: right;
+    }
+  }
+
+  h4 {
+    margin: 0;
+    font-size: 16px;
+    padding: 0;
+    font-weight: 300;
+  }
+
+  p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    font-weight: 300;
+    color: #666f77; // Adjust color if needed
+  }
+
+  // Responsive styles
+  @media (max-width: 576px) {
+    td:nth-child(2),
+    td:nth-child(3) {
+      display: none;
+    }
+  }
+}
+
+.invoice-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 500px;
+  margin-left: auto;
+
+  .invoice-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+
+    .label {
+      font-size: 14px;
+      font-weight: 300;
+      color: #b7bdcf;
+    }
+
+    .value {
+      font-size: 20px;
+      color: var(--text-black);
+      font-weight: 200;
+    }
+
+    &.total {
+      display: flex;
+      align-items: center;
+      .label2 {
+        font-size: 16px !important;
+        color: var(--text-black);
+        font-weight: 500;
+      }
+      .value2 {
+        font-size: 25px !important;
+        color: var(--text-black);
+        font-weight: 600;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .invoice-item .label {
+        font-size: 12px;
+      }
+      .invoice-item .value {
+        font-size: 12px;
+      }
+      .invoice-item.total .label,
+      .invoice-item.total .value {
+        font-size: 14px;
+      }
+    }
+  }
+}

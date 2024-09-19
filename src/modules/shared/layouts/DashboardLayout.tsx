@@ -1,7 +1,7 @@
 import { FC } from "react";
 import TopNav from "../components/navigation/TopNav";
 import "./dashboardLayout.scss";
-import SideBar from "../components/navigation/SideBar";
+import SideBar from "../components/navigation/SideNav";
 
 interface DashbboardLayoutProps {
   children: React.ReactNode;
