@@ -19,7 +19,7 @@ export const routes: Route[] = [
   },
   {
     name: "Invoice",
-    path: "/invoice",
+    path: "/",
     icon: "/assets/icons/invoice.svg",
   },
   {
