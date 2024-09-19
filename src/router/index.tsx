@@ -8,7 +8,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "invoice",
+        path: "",
         element: <Invoice />,
       },
      

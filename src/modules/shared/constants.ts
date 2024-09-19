@@ -10,7 +10,7 @@ export const routes: Route[] = [
   {
     name: "Overview",
     path: "/invoice",
-    icon: "/public/assets/icons/two-tone.svg",
+    icon: "/assets/icons/two-tone.svg",
   },
   {
     name: "Accounts",
@@ -20,21 +20,21 @@ export const routes: Route[] = [
   {
     name: "Invoice",
     path: "/invoice",
-    icon: "/public/assets/icons/invoice.svg",
+    icon: "/assets/icons/invoice.svg",
   },
   {
     name: "Beneficiary Management",
     path: "/invoice",
-    icon: "/public/assets/icons/personnel.svg",
+    icon: "/assets/icons/personnel.svg",
   },
   {
     name: "Help Center",
     path: "/invoice",
-    icon: "/public/assets/icons/help.svg",
+    icon: "/assets/icons/help.svg",
   },
   {
     name: "Settings",
     path: "/invoice",
-    icon: "/public/assets/icons/settings.svg",
+    icon: "/assets/icons/settings.svg",
   },
 ];
