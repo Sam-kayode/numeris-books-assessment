@@ -4,37 +4,37 @@ import { Route } from "./types";
 export const routes: Route[] = [
   {
     name: "Getting Started",
-    path: "/invoice",
+    path: "/",
     icon: "/assets/icons/home.svg",
   },
   {
     name: "Overview",
-    path: "/invoice",
+    path: "/",
     icon: "/assets/icons/two-tone.svg",
   },
   {
     name: "Accounts",
-    path: "/invoice",
+    path: "/",
     icon: "/assets/icons/home.svg",
   },
   {
     name: "Invoice",
     path: "/",
-    icon: "/assets/icons/invoice.svg",
+    icon: "/assets/icons/.svg",
   },
   {
     name: "Beneficiary Management",
-    path: "/invoice",
+    path: "/",
     icon: "/assets/icons/personnel.svg",
   },
   {
     name: "Help Center",
-    path: "/invoice",
+    path: "/",
     icon: "/assets/icons/help.svg",
   },
   {
     name: "Settings",
-    path: "/invoice",
+    path: "/",
     icon: "/assets/icons/settings.svg",
   },
 ];
