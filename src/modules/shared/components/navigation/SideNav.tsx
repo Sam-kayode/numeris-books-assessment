@@ -8,7 +8,7 @@ interface SideBarProps{
 const SideBar:React.FC<SideBarProps> = ({onClick}) => {
   return (
     <div className="side-bar pt-5">
-      <img src="/public/assets/images/logo.svg" alt="" className="hidden md:inline-block"/>
+      <img src="/assets/images/logo.svg" alt="" className="hidden md:inline-block"/>
 
       <nav className="mt-8" onClick={onClick}>
         <NavItems routes={routes}/>
