@@ -9,7 +9,7 @@ export const routes: Route[] = [
   },
   {
     name: "Overview",
-    path: "/",
+    path: "",
     icon: "/assets/icons/two-tone.svg",
   },
   {
@@ -20,7 +20,7 @@ export const routes: Route[] = [
   {
     name: "Invoice",
     path: "/",
-    icon: "/assets/icons/.svg",
+    icon: "/assets/icons/invoice.svg",
   },
   {
     name: "Beneficiary Management",
