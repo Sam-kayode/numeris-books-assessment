@@ -1,15 +1,11 @@
+@import url("/src/assets/fonts/fonts.scss");
+@import "./assets/styles/variable.scss";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url("/src/assets/fonts/fonts.scss");
-@import "./assets/styles/variable.scss";
 
-/* @font-face {
-  font-family: "Neue Haas Grotesk Text Pro";
-  src: url("./assets/fonts/NeueHaasGroteskTextPro.woff2") format("woff2"),
-    url("./assets/fonts/NeueHaasGroteskTextPro.woff") format("woff");
-} */
 
 
 * {
