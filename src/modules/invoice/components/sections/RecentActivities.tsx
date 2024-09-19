@@ -9,7 +9,7 @@ const RecentActivities = () => {
     <NumerisCard className="recent-card recent-activities" variant="lg">
       <header className="mb-8">
         <h3>Recent Activities</h3>
-        <Button variant="outlined">VIEW ALL</Button>
+        <Button variant="outlined" className="recent-activity-btn">VIEW ALL</Button>
       </header>
       <ActivityList activities={recentActivities} />
     </NumerisCard>

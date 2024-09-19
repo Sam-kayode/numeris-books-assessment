@@ -114,3 +114,42 @@ export const recentActivities: ActivityData[] = [
     description: "00239434/Olaniyi Ojo Adewale",
   },
 ];
+
+export const invoiceItems = [
+  {
+    title: "Email Marketing",
+    description:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
+    quantity: 10,
+    unitPrice: "$1,500",
+    totalPrice: "$15,000.00",
+  },
+  {
+    title: "Video looping effect",
+    quantity: 6,
+    unitPrice: "$1,110,500",
+    totalPrice: "$6,663,000.00",
+  },
+  {
+    title: "Graphic design for emails",
+    description: "Tsit voluptatem accusantium",
+    quantity: 7,
+    unitPrice: "$2,750",
+    totalPrice: "$19,250.00",
+  },
+  {
+    title: "Video looping effect",
+    quantity: 6,
+    unitPrice: "$1,110,500",
+    totalPrice: "$6,663,000.00",
+  },
+];
+
+export const paymentData = [
+  { label: 'ACCOUNT NAME', value: '1023902390' },
+  { label: 'ACCOUNT NUMBER', value: 'March 30th, 2023' },
+  { label: 'ACH ROUTING NO', value: 'May 19th, 2023' },
+  { label: 'BANK NAME', value: 'USD ($)' },
+  { label: 'BANK ADDRESS', value: '1023902390' },
+  { label: 'ACCOUNT NUMBER', value: 'March 30th, 2023' },
+];

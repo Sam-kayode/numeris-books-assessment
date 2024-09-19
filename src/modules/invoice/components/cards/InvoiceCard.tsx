@@ -32,7 +32,7 @@ export const InvoiceCard: React.FC<InvoiceCardProps> = ({
       </div>
 
       {/* Card Title and Badge */}
-      <p className="card-title d-flex my-2 md:my-4">
+      <p className="card-title d-flex my-2 md:my-3 mb-2">
         {title}
 
         {badgeCount && (

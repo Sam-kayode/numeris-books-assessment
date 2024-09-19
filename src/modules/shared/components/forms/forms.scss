@@ -1,5 +1,12 @@
 @import "../../../../assets/styles/variable.scss";
 
+@mixin btn-hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(144, 144, 144, 0.2);
+  opacity: 0.9;
+}
+
+// Base button styles
 .btn {
   height: 68px;
   display: flex;
@@ -11,56 +18,133 @@
   border-radius: 40px;
   border: none;
   cursor: pointer;
-}
 
-.btn:hover {
-  transform: scale(1.02);
-  box-shadow: 0 6px 15px rgba(144, 144, 144, 0.2);
-  opacity: 0.9;
-}
+  &:hover {
+    @include btn-hover;
+  }
 
-.btn-primary {
-  background-color: var(--primary-color);
-  color: var(--white-color);
-}
+  // Media queries
+  @media only screen and (max-width: 1024px) {
+    // height: fit-content;
+    // padding: 8px 20px;
+  }
 
-.btn-secondary {
-}
+  @media only screen and (max-width: 768px) {
+  }
 
-.btn-outlined {
-  border: 1px solid #e3e6ef;
-  color: var(--text-grey);
-}
-
-.btn-plain {
-}
-
-.btn-rounded {
-  width: 64px;
-  height: 64px;
-  border-radius: 40px;
-  padding: 0;
-}
-
-.compact {
-}
-
-.default {
-}
-
-@media only screen and (max-width: 1024px) {
-  //   .btn {
-  //     height: fit-content;
-  //     padding: 8px 20px;
-  //   }
-}
-
-@media only screen and (max-width: 768px) {
-}
-
-@media only screen and (max-width: 576px) {
-  .btn {
+  @media only screen and (max-width: 576px) {
     height: fit-content;
     padding: 20px 35px;
   }
+
+  // Modifier styles
+  &-primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+  }
+
+  &-secondary {
+  }
+
+  &-outlined {
+    border: 1px solid #e3e6ef;
+    color: var(--text-grey);
+  }
+
+  &-plain {
+    // Add styles for plain button
+  }
+
+  &-rounded {
+    width: 64px;
+    height: 64px;
+    border-radius: 40px;
+    padding: 0;
+  }
+
+  &.compact {
+    // Add styles for compact button
+  }
+
+  &.default {
+    // Add styles for default button
+  }
+}
+
+// Dropdown container styles
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+  // Toggle button styles
+  &-toggle {
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+
+  // Dropdown menu styles
+  &-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+    margin-top: 10px;
+    list-style: none;
+    background-color: white;
+    border-radius: 24px;
+    width: 262px;
+    border: 1px solid #e3e6ef;
+    overflow: hidden;
+    z-index: 9999999999;
+    // Menu item styles
+    li {
+      padding: 0;
+    }
+
+    .dropdown-item {
+      padding: 16px 30px;
+      display: block;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17.4px;
+      letter-spacing: 0.02em;
+      color: var(--text-grey);
+
+      &:hover {
+        background-color: #f2f2f2;
+      }
+    }
+  }
+
+  // Show dropdown when parent is focused
+  &:focus-within .dropdown-menu {
+    display: block;
+  }
+}
+
+.check-button {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.4px;
+  color: var(--dark-grey);
+  letter-spacing: -0.45px;
+  border: none;
+  border-radius: 24px;
+  padding: 25px 20px !important;
+  cursor: pointer;
+  border: 1px solid #e3e6ef;
+  height: 20px;
+  width: fit-content;
+text-wrap: nowrap;
+  @media only screen and (max-width: 576px) {
+    padding: 25px 20px !important;
+  }
+
+}
+
+.is-checked {
+  border: none;
 }

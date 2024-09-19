@@ -12,6 +12,7 @@ const RecentActivityList: React.FC<ActivityProps> = ({ activities }) => {
           <div key={index} className="activity mb-6">
             <div className="image">
               <img src={picture} alt={title} />
+              <div className="vertical-line"></div>
             </div>
             <div className="activity-details pl-4">
               <p className="title">{title}</p>

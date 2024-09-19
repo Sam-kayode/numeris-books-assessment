@@ -31,6 +31,8 @@ export const getStatusColor = (status: string): string => {
     draft: "bg-[#F6F8FA] border border-[#373B4733] !text-[#373B47]",
 
     "pending payment": "bg-[#FFF8EB] border border-[#D98F0033] !text-[#D98F00]",
+
+    "partial payment": "bg-[#F2FBFF] border border-[#003EFF33] !text-[#003EFF]",
   };
 
   return statusClasses[status.toLowerCase()] || "";

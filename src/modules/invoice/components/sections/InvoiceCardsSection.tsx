@@ -1,9 +1,9 @@
-// import "../cards/cards.scss";
+import "./sections.scss";
 import { invoiceSummaryData, InvoiceCard, SummaryData } from "../../index";
 
 export const InvoiceCardsSection = () => {
   return (
-    <div className="invoice-cards-container mt-9 pb-3">
+    <section className="invoice-cards-container mt-9 pb-3">
       {invoiceSummaryData.map(
         ({ title, badgeCount, amount }: SummaryData, index: number) => (
           <InvoiceCard
@@ -15,6 +15,6 @@ export const InvoiceCardsSection = () => {
           />
         )
       )}
-    </div>
+    </section>
   );
 };

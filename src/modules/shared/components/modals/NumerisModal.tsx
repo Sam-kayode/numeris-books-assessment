@@ -1,4 +1,4 @@
-import "./Modal.css"; // Importing the CSS for animations
+import "./modals.scss";
 
 interface ModalProps {
   isVisible: boolean;
@@ -14,10 +14,13 @@ const NumerisModal: React.FC<ModalProps> = ({
   return (
     <div className={`modal ${isVisible ? "modal-show" : "modal-hide"}`}>
       <div className="modal-content">
-        <button className="modal-close" onClick={onClose}>
-          &times;
-        </button>
-        {children}
+        <div>
+          <button className="modal-close" onClick={onClose}>
+            <img src="/assets/icons/close.svg" alt="" />
+          </button>
+        </div>
+
+        <div className="children-content">{children}</div>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import { InvoiceCard, invoiceActionData, InvoiceActionData } from "../../index";
 
 export const InvoiceActionsSection = () => {
   return (
-    <>
+    <section>
       <header className="invoice-action-header mt-7 mb-5">
         <h3 className="pr-5">Invoice Actions</h3>
         <hr />
@@ -23,6 +23,6 @@ export const InvoiceActionsSection = () => {
           )
         )}
       </div>
-    </>
+    </section>
   );
 };
